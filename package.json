@@ -4,11 +4,12 @@
   "description": "Simple, reliable and well tested OSC servers and clients for node.js",
   "author": "Sébastien Piquemal <sebpiq@gmail.com>",
   "scripts": {
-    "test": "mocha --recursive --b"
+    "test": "mocha --recursive --b",
+    "coverage": "istanbul cover _mocha -- test --reporter spec --recursive"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodejitsu/browsenpm.org"
+    "url": "git@github.com:sebpiq/node-moscow.git"
   },
   "keywords": [
     "osc", "udp", "tcp"
@@ -18,7 +19,7 @@
     "osc-min": "0.2.x"
   },
   "devDependencies": {
-    "mocha": "x"
+    "async": "0.7.x"
   },
   "license": "MIT"
 }

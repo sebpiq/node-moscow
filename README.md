@@ -1,10 +1,20 @@
 node-moscow
 =============
 
-**node-moscow** is a node package providing simple, reliable and well tested OSC servers and clients for node.js. It implements servers and clients for OSC communication on top of **TCP** and **UDP**.
+**node-moscow** is a node package providing **simple, reliable and well tested OSC servers and clients** for node.js. It implements servers and clients for OSC communication on top of **TCP** and **UDP**.
+
+To install it run :
+
+```npm install moscow```
+
+
+Minimalist example
+--------------------
+
+Script **server.js**
 
 ```javascript
-// Server script, just logs whatever messages come
+// Creates a UDP server, listening on port 9000
 var server = new require('moscow').createServer(9000, 'udp')
 
 // Bind to the `message` event to handle incoming messages 
@@ -18,23 +28,19 @@ server.start(function() {
 })
 ```
 
+Script **client.js**
+
 ```javascript
-// Client script, sends one message
+// Creates a UDP client sending to host 'localhost' on port 9000
 var client = new require('moscow').createClient('localhost', 9000, 'udp')
 
 // Call the `send(address, args)` method to send a message
 client.send('/bla/blo', [11, 22, 'hello'])
 ```
 
-Installation
---------------
-
-To install **node-moscow** run :
-
-```npm install moscow```
-
-
-Which protocol to choose for the transport?
+FAQ
 ---------------------------------------------
 
-OSC is a protocol for communicating between multimedia devices, and can be implemented on top of different transport protocols. In most applications, **UDP** is used, but sometimes other protocols such as **TCP** can be needed, for example if it important not to miss any message.
+### What is the difference between UDP and TCP?
+
+UDP is the most commonly used because it is faster than TCP. On the other hand, with UDP you might loose some messages, while TCP ensures all packets are properly received. So this is a trade-off to make.
