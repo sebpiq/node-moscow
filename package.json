@@ -1,7 +1,7 @@
 {
-  "name": "node-moscow",
+  "name": "moscow",
   "version": "0.1.0",
-  "description": "",
+  "description": "Simple, reliable and well tested OSC servers and clients for node.js",
   "author": "Sébastien Piquemal <sebpiq@gmail.com>",
   "scripts": {
     "test": "mocha --recursive --b"
@@ -14,8 +14,11 @@
     "osc", "udp", "tcp"
   ],
   "dependencies": {
+    "underscore": "1.7.x",
+    "osc-min": "0.2.x"
   },
   "devDependencies": {
+    "mocha": "x"
   },
   "license": "MIT"
 }
