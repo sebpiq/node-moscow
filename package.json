@@ -19,7 +19,8 @@
     "osc-min": "0.2.x"
   },
   "devDependencies": {
-    "async": "0.7.x"
+    "async": "0.7.x",
+    "mocha": "1.17.x"
   },
   "license": "MIT"
 }
