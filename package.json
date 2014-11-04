@@ -1,0 +1,21 @@
+{
+  "name": "node-moscow",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Sébastien Piquemal <sebpiq@gmail.com>",
+  "scripts": {
+    "test": "mocha --recursive --b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodejitsu/browsenpm.org"
+  },
+  "keywords": [
+    "osc", "udp", "tcp"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "license": "MIT"
+}
