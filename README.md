@@ -38,8 +38,38 @@ var client = new require('moscow').createClient('localhost', 9000, 'udp')
 client.send('/bla/blo', [11, 22, 'hello'])
 ```
 
+API
+------
+
+### Server
+
+#### Event: 'message'
+
+Emitted when an OSC message was received by the server. Handlers are passed two arguments `address`, the OSC address, and `args` the list of arguments sent along the message. Example :
+
+```javascript
+server.on('message', function(address, args) {
+  if (address === '/color') console.log('R:' + args[0] + ',G:' + args[1] + ',B:' + args[2])
+})
+``` 
+
+
+#### Server.start(done)
+
+Starts the server and calls `done(err)`.
+
+
+#### Server.stop(done)
+
+Stops the server and calls `done(err)`.
+
+
+### Client
+
+
+
 FAQ
----------------------------------------------
+-------
 
 ### What is the difference between UDP and TCP?
 

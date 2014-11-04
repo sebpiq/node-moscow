@@ -4,7 +4,7 @@
   "description": "Simple, reliable and well tested OSC servers and clients for node.js",
   "author": "Sébastien Piquemal <sebpiq@gmail.com>",
   "scripts": {
-    "test": "mocha --recursive --b",
+    "test": "mocha --recursive",
     "coverage": "istanbul cover _mocha -- test --reporter spec --recursive"
   },
   "repository": {
