@@ -3,15 +3,13 @@ node-moscow
 
 **node-moscow** is a node package providing **simple, reliable and well tested OSC servers and clients** for node.js. It implements servers and clients for OSC communication on top of **TCP** and **UDP**.
 
-To install it run :
-
-```npm install moscow```
+To install it run `npm install moscow`
 
 
 Minimalist example
 --------------------
 
-Script **server.js**
+**server.js**
 
 ```javascript
 // Creates a UDP server, listening on port 9000
@@ -28,7 +26,7 @@ server.start(function() {
 })
 ```
 
-Script **client.js**
+**client.js**
 
 ```javascript
 // Creates a UDP client sending to host 'localhost' on port 9000
@@ -43,4 +41,4 @@ FAQ
 
 ### What is the difference between UDP and TCP?
 
-UDP is the most commonly used because it is faster than TCP. On the other hand, with UDP you might loose some messages, while TCP ensures all packets are properly received. So this is a trade-off to make.
+UDP is the commonly used with OSC because it is faster than TCP. On the other hand, with UDP you might loose some messages, while TCP ensures all packets are properly received. So this is a trade-off to make, depending on your requirements.
