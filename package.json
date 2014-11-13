@@ -1,6 +1,6 @@
 {
   "name": "moscow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple, reliable and well tested OSC servers and clients for node.js",
   "author": "Sébastien Piquemal <sebpiq@gmail.com>",
   "scripts": {

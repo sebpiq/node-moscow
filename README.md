@@ -118,4 +118,6 @@ UDP is the commonly used with OSC because it is faster than TCP. On the other ha
 Changelog
 -----------
 
+- 0.1.1 Bug fixes
+
 - 0.1.0 Initial release: UDP, TCP client + server.
