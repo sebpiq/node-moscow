@@ -97,19 +97,7 @@ describe('moscow', function() {
 
     describe('errors', function() {
 
-      it('should throw an error if connection closed unexpectedly', function(done) {
-        var server = new FakeServer()
-        server.start(function() {
-          server.on('error', function(err) {
-            assert.ok(err)
-            done()
-          })
-          server._sock.emit('close')
-        })
-        server._sock.emit('listening')
-      })
-
-      it('should throw an error if the socket receives an error while running', function(done) {
+      it('should bubble up the error if the socket receives an error while running', function(done) {
         var server = new FakeServer()
         server.start(function() {
           server.on('error', function(err) {
