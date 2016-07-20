@@ -1,6 +1,8 @@
 node-moscow
 =============
 
+**DEPRECATED** this is not maintained anymore.
+
 [![Build Status](https://travis-ci.org/sebpiq/node-moscow.svg?branch=master)](https://travis-ci.org/sebpiq/node-moscow)
 
 **node-moscow** is a node package providing **simple, reliable and well tested OSC servers and clients** for node.js. It implements servers and clients for OSC communication on top of **TCP** and **UDP**.
